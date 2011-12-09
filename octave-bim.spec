@@ -1,6 +1,6 @@
 %define	pkgname bim
 %define name	octave-%{pkgname}
-%define version 1.0.1
+%define version 1.0.2
 %define release %mkrel 1
 
 Summary:	PAckage for solving DAR PDEs
