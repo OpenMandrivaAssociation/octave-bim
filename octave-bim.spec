@@ -52,3 +52,14 @@ mv %{pkgname}-%{version}/DESCRIPTION .
 %doc COPYING DESCRIPTION
 %{_datadir}/octave/packages/%{pkgname}-%{version}
 
+
+
+%changelog
+* Fri Dec 09 2011 Lev Givon <lev@mandriva.org> 1.0.2-1mdv2012.0
++ Revision: 739472
+- Update to 1.0.2.
+
+* Tue Jun 28 2011 Lev Givon <lev@mandriva.org> 1.0.1-1
++ Revision: 687746
+- import octave-bim
+
