@@ -4,12 +4,12 @@ Summary:	PDE Solver using a Finite Element/Finite Volume approach for Octave
 Name:		octave-%{octpkg}
 Version:	1.1.5
 Release:	1
-Source0:	http://downloads.sourceforge.net/octave/%{octpkg}-%{version}.tar.gz
+Source0:	https://downloads.sourceforge.net/octave/%{octpkg}-%{version}.tar.gz
 # https://savannah.gnu.org/bugs/index.php?44883
 Patch0:		add-lacking-semicolon.patch
 License:	GPLv3+
 Group:		Sciences/Mathematics
-Url:		https://octave.sourceforge.io/%{octpkg}/
+Url:		https://packages.octave.org/%{octpkg}/
 
 BuildRequires:	octave-devel >= 3.8.0
 BuildRequires:	octave-fpl
@@ -28,8 +28,6 @@ BuildArch:	noarch
 Package for solving Diffusion Advection Reaction (DAR) Partial
 Differential Equations based on the Finite Volume Scharfetter-Gummel
 (FVSG) method a.k.a Box Integration Method (BIM).
-
-This package is part of external Octave-Forge collection.
 
 %files
 %license COPYING
