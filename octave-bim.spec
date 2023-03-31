@@ -8,7 +8,7 @@ License:	GPLv2+
 Group:		Sciences/Mathematics
 #Url:		https://packages.octave.org/bim/
 Url:		https://github.com/carlodefalco/bim
-Source0:	https://github.com/carlodefalco/bim/archive/refs/tags/v%{version}/bim-%{version}.tar.gz
+Source0:	https://github.com/carlodefalco/bim/archive/v%{version}/bim-%{version}.tar.gz
 Patch0:		add-lacking-semicolon.patch
 
 BuildRequires:  octave-devel >= 3.8.0
