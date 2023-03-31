@@ -1,23 +1,23 @@
 %global octpkg bim
 
 Summary:	PDE Solver using a Finite Element/Finite Volume approach for Octave
-Name:		octave-%{octpkg}
-Version:	1.1.5
+Name:		octave-bim
+Version:	1.1.6
 Release:	1
-Source0:	https://downloads.sourceforge.net/octave/%{octpkg}-%{version}.tar.gz
-# https://savannah.gnu.org/bugs/index.php?44883
-Patch0:		add-lacking-semicolon.patch
-License:	GPLv3+
+License:	GPLv2+
 Group:		Sciences/Mathematics
-Url:		https://packages.octave.org/%{octpkg}/
+#Url:		https://packages.octave.org/bim/
+Url:		https://github.com/carlodefalco/bim
+Source0:	https://github.com/carlodefalco/bim/archive/refs/tags/v%{version}/bim-%{version}.tar.gz
+Patch0:		add-lacking-semicolon.patch
 
-BuildRequires:	octave-devel >= 3.8.0
-BuildRequires:	octave-fpl
-BuildRequires:	octave-msh
+BuildRequires:  octave-devel >= 3.8.0
+BuildRequires:  octave-fpl
+BuildRequires:  octave-msh
 
 Requires:	octave(api) = %{octave_api}
-Requires:	octave-fpl
-Requires:	octave-msh
+Requires:  	octave-fpl
+Requires:  	octave-msh
 
 Requires(post): octave
 Requires(postun): octave
@@ -38,13 +38,9 @@ Differential Equations based on the Finite Volume Scharfetter-Gummel
 #---------------------------------------------------------------------------
 
 %prep
-%autosetup -p1 -n %{octpkg}
-
-# remove backup files
-find . -name \*~ -delete
+%autosetup -p1 -n %{octpkg}-%{version}
 
 %build
-%set_build_flags
 %octave_pkg_build
 
 %install
