@@ -3,7 +3,7 @@
 Summary:	PDE Solver using a Finite Element/Finite Volume approach for Octave
 Name:		octave-bim
 Version:	1.1.6
-Release:	2
+Release:	3
 License:	GPLv2+
 Group:		Sciences/Mathematics
 #Url:		https://packages.octave.org/bim/
